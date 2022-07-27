@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Loading from "./components/Loading";
+import LoadingArea from "./components/LoadingArea";
+import Timer from "./components/Timer";
+import Clock from "./components/Clock";
+import Comp from "./components/Comp";
+import Handlers from "./components/Handlers";
+import Login from "./components/Login";
+import Refs from "./components/Refs";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Loading />
+      <LoadingArea />
+      <Timer s={60} />
+      <Timer s={30} />
+      <Clock />
+      <Comp />
+      <Handlers />
+      <Login />
+      <Refs />
     </div>
   );
 }
